@@ -9,6 +9,20 @@ def get_character_movies_from_api(character_name)
 
   # iterate over the response hash to find the collection of `films` for the given
   #   `character`
+  response_hash
+  
+  
+  # name = response_hash["results"][0]["name"]
+  # films = response_hash["results"][0]["films"]
+  
+  # if character_name == name
+  #   puts films
+  # end
+  response_hash.each do |key, value|
+    binding.pry
+  end
+  
+  
   # collect those film API urls, make a web request to each URL to get the info
   #  for that film
   # return value of this method should be collection of info about each film.
